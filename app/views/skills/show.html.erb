@@ -9,7 +9,7 @@
   <ul>
     <% @skill.projects.each do |project| %>
       <h4> <%= project.name %> </h4>
-      <li> <%= project.link %> </li>
+      <li> <%= link_to project.link, project.link %> </li>
       <li> <%= project.description %>
       <span><%= link_to "Edit", edit_skill_project_path(@skill, project) %> | <%= link_to "Delete", skill_project_path(@skill, project), :data => {:confirm => "Are you sure?", :method => "delete"} %> </span>
     <% end %>
