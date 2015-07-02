@@ -4,6 +4,12 @@ class ProjectsController < ApplicationController
       @project = @skill.projects.new
     end
 
+    def show
+      @skill = Skill.find(params[:skill_id])
+      @project = Project.find(params[:id])
+    end
+
+
   def create
     @skill = Skill.find(params[:skill_id])
     @project = @skill.projects.new(project_params)

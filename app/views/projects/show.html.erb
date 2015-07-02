@@ -1,0 +1,9 @@
+<h1><%= @project.name %></h1>
+
+<% content_for(:navbar) do %>
+<li><%= link_to "Edit", edit_skill_project_path(@skill, @project) %></li>
+<li><%= link_to "Delete", skill_project_path(@skill, @project), :data => {:confirm => "Are you sure?", :method => "delete"} %></li>
+<% end %>
+
+<li> <%= link_to @project.link, @project.link %> </li>
+<li> <%= @project.description %>
