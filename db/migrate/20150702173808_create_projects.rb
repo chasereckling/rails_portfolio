@@ -1,4 +1,4 @@
-class CreateTasks < ActiveRecord::Migration
+class CreateProjects < ActiveRecord::Migration
   def change
     create_table :projects do |t|
       t.column :description, :string
