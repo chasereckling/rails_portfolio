@@ -1,0 +1,8 @@
+<h1>Programming Skills:</h1>
+
+<ul>
+  <% @skills.each do |skill| %>
+    <h3><%= link_to skill.name, skill_path(skill) %></h3>
+    <span><%= skill.description %></span>
+  <% end %>
+</ul>
