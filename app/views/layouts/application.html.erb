@@ -26,9 +26,11 @@
           <li><%= link_to "Blog", blogs_path%></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><%= yield(:navbar) %></li>
+          <% if user_admin %>
+            <li><%= yield(:navbar) %></li>
+          <% end %>
           <% if user_signed_in? %>
-            <li><a>Logged in as <strong><%= current_user.email %></strong>.</a></li>
+            <li><a>Logged in as <strong><%= current_user.username %></strong>.</a></li>
             <li><%= link_to 'Edit profile', edit_user_registration_path %></li>
             <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
           <% else %>
