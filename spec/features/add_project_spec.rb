@@ -2,7 +2,9 @@ require 'rails_helper'
 
 describe "the add a project process" do
   it "adds a new project" do
-    visit skills_path
+    user = FactoryGirl.create(:user)
+    sign_in
+    visit '/'
     click_on 'Add skill'
     fill_in 'Name', :with => 'All the programs.'
     fill_in 'Description', :with => 'I know everything.'
@@ -17,7 +19,9 @@ describe "the add a project process" do
   end
 
   it "gives error when no name is entered" do
-    visit skills_path
+    user = FactoryGirl.create(:user)
+    sign_in
+    visit '/'
     click_on 'Add skill'
     fill_in 'Name', :with => 'All the programs.'
     fill_in 'Description', :with => 'I know everything.'

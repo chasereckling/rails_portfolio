@@ -2,7 +2,9 @@ require 'rails_helper'
 
 describe "the edit a skill process" do
   it "edits a skill" do
-    visit skills_path
+    user = FactoryGirl.create(:user)
+    sign_in
+    visit '/'
     click_on 'Add skill'
     fill_in 'Name', :with => 'All the programs.'
     fill_in 'Description', :with => 'I know everything.'
@@ -16,7 +18,9 @@ describe "the edit a skill process" do
 end
   describe "the delete a skill process" do
     it "deletes a skill" do
-      visit skills_path
+      user = FactoryGirl.create(:user)
+      sign_in
+      visit '/'
       click_on 'Add skill'
       fill_in 'Name', :with => 'All the programs.'
       fill_in 'Description', :with => 'I know everything.'
