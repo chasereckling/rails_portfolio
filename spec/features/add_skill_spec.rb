@@ -2,6 +2,7 @@ require 'rails_helper'
 
 describe "the add a skill process" do
   it "adds a new skill" do
+    test_skill = FactoryGirl.create(:skill)
     visit skills_path
     click_on 'Add skill'
     fill_in 'Name', :with => 'All the programs.'

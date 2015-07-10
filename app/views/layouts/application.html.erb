@@ -23,7 +23,8 @@
 
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <%= yield(:navbar) %>
+          <li><%= yield(:navbar) %></li>
+          <li><%= link_to "Blog", blogs_path%></li>
 
         </ul>
       </div>
