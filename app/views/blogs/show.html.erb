@@ -1,0 +1,10 @@
+<h1><%= @blog.title%></h1>
+<h6><%= @blog.created_at%></h6>
+<p><%= @blog.body%></p>
+
+<%= link_to "Comment", new_blog_comment_path(@blog)%>
+
+<% @blog.comments.each do |comment| %>
+  <li><%= comment.author %></li>
+  <li><%= comment.body %></li>
+<% end %>
