@@ -7,5 +7,6 @@
 
 <% @blogs.each do |blog| %>
 <h3><%= blog.title%></h3>
+<h6><%= blog.created_at%></h6>
 <p><%= blog.body%></p>
 <% end %>
