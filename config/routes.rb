@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root :to => 'skills#index'
+  devise_for :users
+  root to: 'skills#index'
 
   resources :skills do
     resources :projects
