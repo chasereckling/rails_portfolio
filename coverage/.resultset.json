@@ -545,12 +545,9 @@
       "/Users/chasereckling/Desktop/rails_portfolio/config/routes.rb": [
         1,
         1,
-        null,
-        1,
-        null,
         1,
         1,
-        null,
+        1,
         null,
         1,
         1,
@@ -563,6 +560,7 @@
         null,
         1,
         null,
+        1,
         null,
         1,
         null
@@ -674,6 +672,38 @@
         null,
         null
       ],
+      "/Users/chasereckling/Desktop/rails_portfolio/spec/models/blog_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        null
+      ],
+      "/Users/chasereckling/Desktop/rails_portfolio/app/models/blog.rb": [
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/chasereckling/Desktop/rails_portfolio/spec/models/comment_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        null
+      ],
+      "/Users/chasereckling/Desktop/rails_portfolio/app/models/comment.rb": [
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
       "/Users/chasereckling/Desktop/rails_portfolio/spec/models/project_spec.rb": [
         1,
         null,
@@ -713,6 +743,14 @@
         null,
         1,
         1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        null,
+        2,
+        null,
         null
       ],
       "/Users/chasereckling/Desktop/rails_portfolio/app/controllers/skills_controller.rb": [
@@ -839,6 +877,6 @@
         null
       ]
     },
-    "timestamp": 1436564213
+    "timestamp": 1436567528
   }
 }
