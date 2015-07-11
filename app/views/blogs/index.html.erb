@@ -9,9 +9,9 @@
 <h3><%= blog.title%></h3>
 <h6><%= blog.created_at%></h6>
 <p><%= blog.body%></p>
-<%= link_to blog.comments.count.to_s + " Comments", blog_path(blog.id)%> |
-  <% if current_user.admin %>
-    <%= link_to 'Edit', edit_blog_path(blog) %> |
+<%= link_to blog.comments.count.to_s + " Comments", blog_path(blog.id)%>
+  <% if user_admin %>
+    | <%= link_to 'Edit', edit_blog_path(blog) %> |
     <%= link_to "Delete", blog_path(blog), :method => "delete" %>
   <% end %>
 <% end %>
