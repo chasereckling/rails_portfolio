@@ -11,7 +11,6 @@ describe "the add a comment process" do
     click_on 'Create Blog'
     click_on 'Comments'
     click_on 'Comment'
-    fill_in 'Author', with: 'example'
     fill_in 'Body', with: 'example'
     click_on 'Create Comment'
     expect(page).to have_content 'example'
