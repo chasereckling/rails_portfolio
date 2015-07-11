@@ -8,5 +8,5 @@
   <% @blog.comments.each do |comment| %>
     <li><%= comment.body %></li>
     <% user = User.find(comment.user_id) %>
-      by <%= link_to user.username %>
+      by <%= user.username %>
   <% end %>
