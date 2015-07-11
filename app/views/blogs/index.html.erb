@@ -9,5 +9,5 @@
 <h3><%= blog.title%></h3>
 <h6><%= blog.created_at%></h6>
 <p><%= blog.body%></p>
-<%= link_to "Comments", blog_path(blog.id)%>
+<%= link_to blog.comments.count.to_s + " Comments", blog_path(blog.id)%>
 <% end %>

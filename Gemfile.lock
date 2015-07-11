@@ -201,7 +201,7 @@ PLATFORMS
 
 DEPENDENCIES
   autoprefixer-rails
-  bootstrap-sass (~> 3.2.0)
+  bootstrap-sass
   byebug
   capybara
   coffee-rails
