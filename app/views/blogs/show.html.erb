@@ -9,7 +9,10 @@
 
 <%= link_to "Comment", new_blog_comment_path(@blog)%>
 
-<% @blog.comments.each do |comment| %>
-  <li><%= comment.author%></li>
-  <li><%= comment.body %></li>
-<% end %>
+
+  <% @blog.comments.each do |comment| %>
+    <li><%= comment.author %></li>
+    <li><%= comment.body %></li>
+    <% user = User.find(comment.user_id) %>
+      by <%= link_to user.username %>
+  <% end %>

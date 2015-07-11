@@ -12,6 +12,7 @@ class CommentsController < ApplicationController
   def create
     @blog = Blog.find(params[:blog_id])
     @comment = @blog.comments.new(comment_params)
+    @comment.user_id = current_user.id
     if @comment.save
       redirect_to blog_path(@blog)
     else
