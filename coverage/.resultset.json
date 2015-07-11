@@ -541,15 +541,20 @@
         1,
         1,
         null,
+        null,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/chasereckling/Desktop/rails_portfolio/app/models/user.rb": [
         1,
+        1,
+        1,
         null,
         null,
         1,
         null,
-        1,
         null,
         1,
         1,
@@ -576,10 +581,8 @@
         1,
         1,
         1,
-        1,
         null,
         null,
-        1,
         1,
         1,
         1,
@@ -596,7 +599,6 @@
       "/Users/chasereckling/Desktop/rails_portfolio/spec/features/comments/add_comment_spec.rb": [
         1,
         null,
-        1,
         1,
         1,
         1,
@@ -780,6 +782,8 @@
         1,
         1,
         1,
+        null,
+        1,
         1,
         null
       ],
@@ -787,7 +791,6 @@
         1,
         null,
         1,
-        2,
         2,
         2,
         null
@@ -837,17 +840,12 @@
         1,
         null,
         1,
-        1,
-        null,
-        1,
         2,
         2,
         2,
         2,
         2,
-        null,
         2,
-        null,
         null
       ],
       "/Users/chasereckling/Desktop/rails_portfolio/app/controllers/skills_controller.rb": [
@@ -911,9 +909,9 @@
         null,
         null,
         1,
-        113,
-        85,
-        85,
+        111,
+        83,
+        83,
         null,
         null,
         null,
@@ -928,7 +926,7 @@
         null,
         null,
         1,
-        5,
+        3,
         null,
         null,
         1,
@@ -982,6 +980,7 @@
         null,
         null,
         1,
+        2,
         2,
         2,
         2,
@@ -1050,6 +1049,6 @@
         null
       ]
     },
-    "timestamp": 1436570275
+    "timestamp": 1436587861
   }
 }

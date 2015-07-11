@@ -9,7 +9,6 @@ describe "the edit a blog process" do
     fill_in 'Title', with: 'Learn How to Program'
     fill_in 'Body', with: 'Learn how to program in a bootcamp in 4 months.'
     click_on 'Create Blog'
-    click_on 'Comments'
     click_on 'Edit'
     fill_in 'Title', with: 'Learn How to Program!'
     click_on 'Update Blog'
@@ -24,7 +23,6 @@ describe "the edit a blog process" do
     fill_in 'Title', with: 'Learn How to Program'
     fill_in 'Body', with: 'Learn how to program in a bootcamp in 4 months.'
     click_on 'Create Blog'
-    click_on 'Comments'
     click_on 'Delete'
     expect(page).to have_content 'Blog'
   end
