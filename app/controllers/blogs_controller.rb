@@ -14,7 +14,10 @@ class BlogsController < ApplicationController
   def create
     @blog = Blog.new(blog_params)
     if @blog.save()
-      redirect_to blogs_path
+    respond_to do |format|
+      format.html { redirect_to blogs_path }
+      format.js
+    end
     else
       render :new
     end

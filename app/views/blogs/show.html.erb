@@ -4,9 +4,11 @@
 
 <%= link_to "Comment", new_blog_comment_path(@blog)%>
 
-
   <% @blog.comments.each do |comment| %>
     <li><%= comment.body %></li>
     <% user = User.find(comment.user_id) %>
       by <%= user.username %>
+      <% if user_admin %>
+        | <%= link_to 'Edit', edit_blog_comment_path(user, comment) %> |
+      <% end %>
   <% end %>
