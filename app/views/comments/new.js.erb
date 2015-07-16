@@ -1,2 +1,4 @@
-$('#add_comment_link').hide()
-$('#<%= @blog.id %>').after('<%= j render("form") %>')
+$('#blog_<%= @blog.id %> .comments').hide();
+$('#add_comment_link').hide();
+$('#comments_link').show();
+$('#blog_<%= @blog.id %>').after('<%= j render("form") %>');

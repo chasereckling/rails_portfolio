@@ -1,2 +1,2 @@
 $('#comments_link').hide()
-$('#<%= @blog.id %>').after('<%= j render(@comment) %>')
+$('.comments').html('<%= j render(@comment) %>')

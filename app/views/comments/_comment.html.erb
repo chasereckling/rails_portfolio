@@ -1,4 +1,4 @@
-<div id="comments">
+<div id="comment_<%= comment.id %>">
 <li><%= comment.body %></li>
 <% user = User.find(comment.user_id) %>
   by <%= user.username %>

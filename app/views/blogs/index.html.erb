@@ -5,11 +5,6 @@
 <h1>Blog Page</h1>
 <div id="blogs">
   <% @blogs.each do |blog| %>
-      <%= render blog %>
-      <div id="<%= blog.id %>">
-      </div>
-    <% blog.comments.each do |comment| %>
-      <% render comment %>
-    <% end %>
+    <%= render blog %>
   <% end %>
 </div>
