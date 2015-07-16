@@ -2,7 +2,7 @@
   <h3><%= blog.title%></h3>
   <h6><%= blog.created_at %></h6>
   <p><%= blog.body%></p>
-  <%= link_to blog.comments.count.to_s + " Comments", blog_comment_path(blog.id, @comment) %>
+  <%= link_to blog.comments.count.to_s + " Comments", blog_comment_path(blog, blog.comments) %>
     <% if user_admin %>
       | <%= link_to 'Edit', edit_blog_path(blog) %> |
       <%= link_to "Delete", blog_path(blog), :method => "delete" %>

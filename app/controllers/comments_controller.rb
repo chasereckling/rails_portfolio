@@ -5,6 +5,12 @@ class CommentsController < ApplicationController
     @comments = Comment.all
   end
 
+  def show
+    @blog = Blog.find(params[:blog_id])
+    @comments = Comment.all
+    @comment = @blog.comments
+  end
+
   def new
       @blog = Blog.find(params[:blog_id])
       @comment = @blog.comments.new
