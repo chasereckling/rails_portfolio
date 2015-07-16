@@ -1,1 +1,2 @@
-$('#<%= @blog.id %>').hide().after('<%= j render("form") %>')
+$('#add_comment_link').hide()
+$('#<%= @blog.id %>').after('<%= j render("form") %>')
