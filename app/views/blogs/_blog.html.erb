@@ -1,3 +1,4 @@
+<div id="blog_<%= blog.id %>"
   <h3><%= blog.title%></h3>
   <h6><%= blog.created_at %></h6>
   <p><%= blog.body%></p>
@@ -8,5 +9,6 @@
 
   <% if user_admin %>
     <span><%= link_to 'Edit', edit_blog_path(blog) %> |</span>
-    <span><%= link_to "Delete", blog_path(blog), :method => "delete" %></span>
+    <span><%= link_to "Delete", blog_path(blog), :method => "delete", remote: true %></span>
   <% end %>
+</div>

@@ -42,7 +42,10 @@ class BlogsController < ApplicationController
   def destroy
     @blog = Blog.find(params[:id])
     @blog.destroy
-    redirect_to blogs_path
+    respond_to do |format|
+      format.html { redirect_to blogs_path }
+      format.js
+    end
   end
 
   private

@@ -1,6 +1,6 @@
 <%= render('layouts/errors', :object => @comment) %>
 
-<%= form_for [@blog, @comment] do |f| %>
+<%= form_for [@blog, @comment], remote: true do |f| %>
   <%= f.label :body %>
   <%= f.text_field :body %>
   <p><%= f.submit %></p>

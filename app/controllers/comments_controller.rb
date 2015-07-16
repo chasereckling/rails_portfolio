@@ -25,7 +25,10 @@ class CommentsController < ApplicationController
     @comment = @blog.comments.new(comment_params)
     @comment.user_id = current_user.id
     if @comment.save
-      redirect_to blogs_path(@blog)
+      respond_to do |format|
+        format.html { redirect_to blogs_path }
+        format.js
+      end
     else
       render :new
     end

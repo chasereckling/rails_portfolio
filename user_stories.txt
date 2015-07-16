@@ -1,0 +1,1 @@
+- comment count needs to update on click of create comment button
