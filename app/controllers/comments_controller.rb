@@ -1,5 +1,10 @@
 class CommentsController < ApplicationController
 
+
+  def index
+    @comments = Comment.all
+  end
+
   def new
       @blog = Blog.find(params[:blog_id])
       @comment = @blog.comments.new
@@ -14,7 +19,7 @@ class CommentsController < ApplicationController
     @comment = @blog.comments.new(comment_params)
     @comment.user_id = current_user.id
     if @comment.save
-      redirect_to blog_path(@blog)
+      redirect_to blogs_path(@blog)
     else
       render :new
     end
