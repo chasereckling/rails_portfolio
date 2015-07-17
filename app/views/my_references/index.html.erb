@@ -1,0 +1,11 @@
+<% content_for(:navbar) do %>
+<%= link_to "Add reference", new_my_reference_path, remote: true %>
+<% end %>
+
+<h1>References Page</h1>
+
+<div id="my_references">
+    <% @my_references.each do |my_reference| %>
+      <%= render my_reference %>
+    <% end %>
+</div>

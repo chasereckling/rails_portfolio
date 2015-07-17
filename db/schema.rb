@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150717180758) do
+ActiveRecord::Schema.define(version: 20150717192509) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,16 +32,7 @@ ActiveRecord::Schema.define(version: 20150717180758) do
     t.integer  "user_id"
   end
 
-  create_table "projects", force: :cascade do |t|
-    t.string   "description"
-    t.integer  "skill_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "name"
-    t.string   "link"
-  end
-
-  create_table "references", force: :cascade do |t|
+  create_table "my_references", force: :cascade do |t|
     t.string   "name"
     t.string   "title"
     t.string   "phone"
@@ -49,6 +40,15 @@ ActiveRecord::Schema.define(version: 20150717180758) do
     t.string   "relationship"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "projects", force: :cascade do |t|
+    t.string   "description"
+    t.integer  "skill_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "name"
+    t.string   "link"
   end
 
   create_table "skills", force: :cascade do |t|

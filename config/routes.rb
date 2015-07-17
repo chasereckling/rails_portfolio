@@ -12,5 +12,5 @@ Rails.application.routes.draw do
     resources :comments
   end
 
-  resources :references
+  resources :my_references
 end
