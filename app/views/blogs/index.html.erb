@@ -1,6 +1,6 @@
 <% content_for(:navbar) do %>
+<%= link_to "Add blog", new_blog_path(@blog), remote: true %>
 <% end %>
-<%= link_to "Add blog", new_blog_path(@blog), id: "new_link", remote: true %>
 
 <h1>Blog Page</h1>
 <div id="blogs">

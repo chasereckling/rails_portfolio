@@ -24,6 +24,7 @@
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
           <li><%= link_to "Blog", blogs_path%></li>
+          <li><%= link_to "References", references_path%></li>
           <% if user_admin %>
             <li><%= yield(:navbar) %></li>
           <% end %>
