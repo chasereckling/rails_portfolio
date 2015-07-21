@@ -1,5 +1,0 @@
-<% @comment.each do |comment| %>
-  <% user = User.find(comment.user_id) %>
-  <li><%= comment.body%></li>
-  by <%= user.username %>
-<% end %>
