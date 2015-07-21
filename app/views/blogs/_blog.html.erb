@@ -8,11 +8,11 @@
   </div>
 
   <% if user_admin %>
-    <span><%= link_to 'Edit', edit_blog_path(blog) %> |</span>
+    <span><%= link_to 'Edit', edit_blog_path(blog), remote: true %> |</span>
     <span><%= link_to "Delete", blog_path(blog), :method => "delete", remote: true %></span>
   <% end %>
 
     <div class="comments">
     </div>
-    
+
 </div>

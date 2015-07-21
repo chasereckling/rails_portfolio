@@ -31,8 +31,10 @@ class BlogsController < ApplicationController
   def update
     @blog = Blog.find(params[:id])
     if @blog.update(blog_params)
-      flash[:notice] = "Your blog has been updated"
-      redirect_to blogs_path
+      respond_to do |format|
+        format.html { redirect_to blogs_path }
+        format.js
+      end
     else
       render :edit
     end
